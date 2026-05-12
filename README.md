@@ -1,10 +1,23 @@
-# [Backstage](https://backstage.io)
+# system-development-backstage
 
-This is your newly scaffolded Backstage App, Good Luck!
+Custom Backstage application image for `development-system`.
 
-To start the app, run:
+## Includes
 
-```sh
+- GitHub auth backend provider module
+- Catalog ingestion for dynamic-systems-io component repositories
+- Kubernetes/Argo-ready backend config via app-config files
+
+## Local build
+
+```bash
+cd /workspace/system-development-backstage
 yarn install
-yarn start
+yarn --cwd packages/backend build-image
 ```
+
+## OAuth callback URL
+
+Configure GitHub OAuth app callback URL as:
+
+`http://backstage.localhost:8080/api/auth/github/handler/frame`
