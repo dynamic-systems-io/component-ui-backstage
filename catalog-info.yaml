@@ -2,12 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: system-development-backstage
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  description: Custom Backstage application source and image build for development-system.
+  tags:
+    - backstage
+    - developer-portal
+    - platform
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: development-system-backstage
+    argocd/app-namespace: argocd
+    backstage.io/kubernetes-id: development-system-backstage
 spec:
-  type: website
-  owner: john@example.com
+  type: service
+  owner: group:default/simulation-platform
   lifecycle: experimental
+  system: practical-distributed-simulation-platform
