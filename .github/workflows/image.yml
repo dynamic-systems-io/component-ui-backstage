@@ -24,4 +24,4 @@ jobs:
           context: .
           file: packages/backend/Dockerfile
           push: true
-          tags: ghcr.io/dynamic-systems-io/system-development-backstage:main
+          tags: ghcr.io/dynamic-systems-io/component-ui-backstage:main

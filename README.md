@@ -1,4 +1,4 @@
-# system-development-backstage
+# component-ui-backstage
 
 Custom Backstage application image for `development-system`.
 
@@ -11,7 +11,7 @@ Custom Backstage application image for `development-system`.
 ## Local build
 
 ```bash
-cd /workspace/system-development-backstage
+cd /workspace/component-ui-backstage
 yarn install
 yarn --cwd packages/backend build-image
 ```
