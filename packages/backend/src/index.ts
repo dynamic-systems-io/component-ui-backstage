@@ -1,7 +1,7 @@
 /*
  * Hi!
  *
- * Note that this is an EXAMPLE Backstage backend. Please check the README.
+ * Note that this is an EXAMPLE developer portal backend (Backstage-based). Please check the README.
  *
  * Happy hacking!
  */
@@ -26,6 +26,7 @@ backend.add(import('@backstage/plugin-techdocs-backend'));
 // auth plugin
 backend.add(import('@backstage/plugin-auth-backend'));
 backend.add(import('@backstage/plugin-auth-backend-module-github-provider'));
+backend.add(import('@backstage/plugin-auth-backend-module-oidc-provider'));
 
 // catalog plugin
 backend.add(import('@backstage/plugin-catalog-backend'));

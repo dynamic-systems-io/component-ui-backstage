@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: component-ui-backstage
-  description: Backstage UI component source and image build for development-system.
+  name: component-developer-portal
+  description: Developer portal component source and image build for development-system (Backstage-based).
   tags:
     - backstage
     - developer-portal

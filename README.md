@@ -1,6 +1,6 @@
-# component-ui-backstage
+# component-developer-portal
 
-Custom Backstage application image for `development-system`.
+Custom developer portal application image for `development-system` (Backstage-based).
 
 ## Includes
 
@@ -11,12 +11,12 @@ Custom Backstage application image for `development-system`.
 ## Local build
 
 ```bash
-cd /workspace/component-ui-backstage
+cd /workspace/component-developer-portal
 yarn install
 yarn --cwd packages/backend build-image
 ```
 
-## OAuth callback URL
+## Developer portal OAuth callback URL
 
 Configure GitHub OAuth app callback URL as:
 
